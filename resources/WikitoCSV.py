@@ -24,6 +24,7 @@ __author__ = 'charlesbean'
         It converts these corpus files into TEvA applicable CSV and Reference files. (Class ConvertedWiki)**
 
     Details:
+    
         * It takes a series of desired articles from Wikipedia Featured Aritcles (log) web-addresses (subclass of
             FeaturedArticles), and searches the english dump for the matching summaries. It then creates a set of files,
             that are composed of miscellaneous paragraphs from the summaries in a random order.
