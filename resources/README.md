@@ -35,58 +35,58 @@ PARAMETERS
 --------------------------------------------------------
 
 
-### Corpus Creation Directories ###
+Corpus Creation Directories
 
-# The root directory in which the bz2 file was unzipped (location of all Wikipedia files)
-rootdir = "/Volumes/Arthur/WikipediaFiles/extracted"    # testing - "/Users/charlesbean/Code/TEvA/Corpora/Testbed"
+* The root directory in which the bz2 file was unzipped (location of all Wikipedia files)
+    * rootdir = "/Volumes/Arthur/WikipediaFiles/extracted"
 
-# Conjoined summaries output directory (Created corpus output directory)
-condir = "/Users/charlesbean/Code/TEvA/Corpora/Wikipedia/FeaturedArticles/Conjoined"
+* Conjoined summaries output directory (Created corpus output directory)
+    * condir = "/Users/charlesbean/Code/TEvA/Corpora/Wikipedia/FeaturedArticles/Conjoined"
 
-# Directory for the matching title files (titles for each break)
-titledir = "/Users/charlesbean/Code/TEvA/Corpora/Wikipedia/FeaturedArticles/Titles"
-
-
-
-
-### TEvA Creation Directories ###
-
-# Corpus rootdirectory
-tevarootdir = condir
-
-# CSV output directory
-outdir = "/Users/charlesbean/Code/TEvA/Corpora/Converted/FeaturedWikiArticles/Data/Extracted"
-
-# Reference files output directory
-refdir = "/Users/charlesbean/Code/TEvA/Corpora/Converted/FeaturedWikiArticles/Data/Ref Files"
+* Directory for the matching title files (titles for each break)
+    * titledir = "/Users/charlesbean/Code/TEvA/Corpora/Wikipedia/FeaturedArticles/Titles"
 
 
 
 
-### Featured Articles Address ###
+TEvA Creation Directories
 
-## Featured Articles Log WebAddresses ##
-featuredList = ["January_2014", "February_2014", "March_2014", "April_2014"]
+* Corpus rootdirectory
+    * tevarootdir = condir
+
+* CSV output directory
+    * outdir = "/Users/charlesbean/Code/TEvA/Corpora/Converted/FeaturedWikiArticles/Data/Extracted"
+
+* Reference files output directory
+    * refdir = "/Users/charlesbean/Code/TEvA/Corpora/Converted/FeaturedWikiArticles/Data/Ref Files"
 
 
 
 
-### Specifications (Corpus creation) ###
+Featured Articles Address
 
-# Number of paragraphs per file
-numParags = 20
+* Featured Articles Log WebAddresses
+    * featuredList = ["January_2014", "February_2014", "March_2014", "April_2014"]
 
-# Random selection of summaries [True]
-randomselect = True
 
-# Minimum number of sentences per paragraph [3]
-minsentences = 3
 
-# Maximum number of sentences per paragraph [10]
-maxsentences = 10
 
-# Paragraph separator (for the conjoined output) ["====================\n"]
-separator = "====================\n"
+Specifications (Corpus creation)
+
+* Number of paragraphs per file
+    * numParags = 20
+
+* Random selection of summaries [True]
+    * randomselect = True
+
+* Minimum number of sentences per paragraph [3]
+    * minsentences = 3
+
+* Maximum number of sentences per paragraph [10]
+    * maxsentences = 10
+
+* Paragraph separator (for the conjoined output) ["====================\n"]
+    * separator = "====================\n"
 
 
 
