@@ -24,7 +24,7 @@ __author__ = 'charlesbean'
         It converts these corpus files into TEvA applicable CSV and Reference files. (Class ConvertedWiki)**
 
     Details:
-    
+
         * It takes a series of desired articles from Wikipedia Featured Aritcles (log) web-addresses (subclass of
             FeaturedArticles), and searches the english dump for the matching summaries. It then creates a set of files,
             that are composed of miscellaneous paragraphs from the summaries in a random order.
@@ -89,7 +89,7 @@ from random import choice, shuffle
 ### Corpus Creation Directories ###
 
 # The root directory in which the bz2 file was unzipped (location of all Wikipedia files)
-rootdir = "/Volumes/Arthur/WikipediaFiles/extracted"    # testing - "/Users/charlesbean/Code/TEvA/Corpora/Testbed"
+rootdir = "/Volumes/Arthur/WikipediaFiles/extracted"  
 
 #Conjoined summaries output directory (Created corpus output directory)
 condir = "/Users/charlesbean/Code/TEvA/Corpora/Wikipedia/FeaturedArticles/Conjoined"
