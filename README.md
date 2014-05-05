@@ -9,4 +9,5 @@ depends on TEvA, as well as COS and iGraph/Maximal Cliques.
 
 The properties file contains several parameters that can help debug.
 
-The Python script, WikiSummaryConjoiner, should be used on a Wiki dump to provide smoothest results.
+The Python script, WikiCorpus, should be used on a Wiki dump to create a summary corpus,
+and subsequent CSV and Reference files.
