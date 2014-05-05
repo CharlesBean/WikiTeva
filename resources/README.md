@@ -4,24 +4,25 @@ README
 OVERVIEW
 ------------------------------------------------------
 
-WikiSummaryConjoiner is a small Python script,
+WikiCorpus is a small Python script,
 designed to randomly concatenate Wikipedia summary paragraphs
-into a text file. As of currently, the script requires
-use of the WikiExtractor python script. In the future, it
-may pull directly from HTML.
+into a corpus. As of currently, the script requires
+use of the WikiExtractor python script.
 
 WikiExtractor:
 	http://medialab.di.unipi.it/wiki/Wikipedia_Extractor
 
 This program is intended to help in validating a topic-evolution
-algorithm (TEvA).
+algorithm (TEvA). Currently, it also creates a series of
+CSV and Reference files for this purpose, but this function
+can be uncommented/removed (class ConvertedWiki).
 
 
 
 CONTACT INFO
 -------------------------------------------------------
 
-WikiSummaryConjoiner
+WikiCorpus
 * Charles Bean
 	* beanchar@msu.edu
 
@@ -33,35 +34,61 @@ TEvA
 PARAMETERS
 --------------------------------------------------------
 
-*The root directory in which the bz2 file was unzipped*
-* rootdir = "/Users/charlesbean/Code/WikiSummaryConjoiner/extracted"
 
-*Out file*
-* out_filename = "summaries.txt"
+### Corpus Creation Directories ###
 
-*Reference file*
-* ref_filename = "ref.txt"
+# The root directory in which the bz2 file was unzipped (location of all Wikipedia files)
+rootdir = "/Volumes/Arthur/WikipediaFiles/extracted"    # testing - "/Users/charlesbean/Code/TEvA/Corpora/Testbed"
 
-*Number of total summary paragraphs concatenated [30]*
-* num_parags = 5
+# Conjoined summaries output directory (Created corpus output directory)
+condir = "/Users/charlesbean/Code/TEvA/Corpora/Wikipedia/FeaturedArticles/Conjoined"
 
-*Maximum number of summary paragraphs pulled per article [2]*
-* num_summaries = 2
+# Directory for the matching title files (titles for each break)
+titledir = "/Users/charlesbean/Code/TEvA/Corpora/Wikipedia/FeaturedArticles/Titles"
 
-*Minimum number of sentences per paragraph [2]*
-* minsentences = 3
 
-*Maximum number of sentences per paragraph [10]*
-* maxsentences = 10
 
-*Random selection of summaries [True]*
-* randomselect = True
 
-*Random selection of articles (from dictionary) [False]*
-* randomart = False
+### TEvA Creation Directories ###
 
-*Random selection of file (affects the order of the list of files, not currently useful) [False]*
-* randomfile = False
+# Corpus rootdirectory
+tevarootdir = condir
+
+# CSV output directory
+outdir = "/Users/charlesbean/Code/TEvA/Corpora/Converted/FeaturedWikiArticles/Data/Extracted"
+
+# Reference files output directory
+refdir = "/Users/charlesbean/Code/TEvA/Corpora/Converted/FeaturedWikiArticles/Data/Ref Files"
+
+
+
+
+### Featured Articles Address ###
+
+## Featured Articles Log WebAddresses ##
+featuredList = ["January_2014", "February_2014", "March_2014", "April_2014"]
+
+
+
+
+### Specifications (Corpus creation) ###
+
+# Number of paragraphs per file
+numParags = 20
+
+# Random selection of summaries [True]
+randomselect = True
+
+# Minimum number of sentences per paragraph [3]
+minsentences = 3
+
+# Maximum number of sentences per paragraph [10]
+maxsentences = 10
+
+# Paragraph separator (for the conjoined output) ["====================\n"]
+separator = "====================\n"
+
+
 
 
 USE
