@@ -104,5 +104,5 @@ Extracts the document files using WikiExtractor (maintains the section titles) a
 places them in *~/extracted*, then uses *Summary_Conjoiner.py* to pull and concatenate the
 summaries. A reference file is also created, for topic checking.
 
-**The *-so* specification is NECESSARY**
+**The *-so* specification is highly recommended**
 	
